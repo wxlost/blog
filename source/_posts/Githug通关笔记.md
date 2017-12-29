@@ -215,7 +215,7 @@ git reset HEAD to_commit_second.rb
 git commit -m"commit to_commit_first.rb"
 ```
 
-![git reset](./Githug通关笔记/reset.svg)
+![git reset](reset.svg)
 
 - --soft 参数将上一次的修改放入暂存区
 - --mixed 参数将上一次的修改放入工作区
@@ -272,7 +272,7 @@ git push origin master
 git diff
 ```
 
-![git diff](./Githug通关笔记/git-diff.svg)
+![git diff](git-diff.svg)
 - `git diff`查看工作区与暂存区之间的差异
 - `git diff --cached`查看暂存区与仓库之间的差异
 - `git diff HEAD`查看仓库与工作区之间的差异
@@ -347,7 +347,7 @@ git fetch origin
 git rebase master feature
 ```
 
-![git rebase](./Githug通关笔记/rebase.svg)
+![git rebase](rebase.svg)
 
 ### rebase_onto
 
