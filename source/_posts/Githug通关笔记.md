@@ -347,6 +347,14 @@ git fetch origin
 git rebase master feature
 ```
 
+其他相关命令：
+
+```shell
+git rebase -i HEAD~4
+```
+
+以交互式模式，进入前四条 commit 进行相关操作。
+
 ![git rebase](rebase.svg)
 
 ### rebase_onto
