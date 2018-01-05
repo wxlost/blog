@@ -13,7 +13,7 @@ Docker 是一个非常有趣的项目，可以减轻环境配置和部署的步�
 
 <!--more-->
 
-## 安装Docker
+## 安装 Docker
 
 已经有现成的脚本可以很方便的在不同的 Linux 版本上安装 Docker 。
 
@@ -21,7 +21,7 @@ Docker 是一个非常有趣的项目，可以减轻环境配置和部署的步�
 sudo wget -qO- https://get.docker.com/ | sh
 ```
 
-## 免sudo权限运行
+## 免 sudo 权限运行
 
 ### 添加到用户组
 
@@ -29,7 +29,7 @@ sudo wget -qO- https://get.docker.com/ | sh
 sudo usermod -aG docker ${USER}
 ```
 
-### shell环境生效
+### shell 环境生效
 
 ```shell
 su - ${USER}
@@ -40,4 +40,12 @@ su - ${USER}
 ```shell
 id -nG
 # output: ouyangsong sudo docker
+```
+
+## 安装 Docker-compose
+
+可以使用 Pip 安装。
+
+```shell
+sudo pip install docker-compose
 ```
