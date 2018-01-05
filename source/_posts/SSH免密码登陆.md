@@ -43,6 +43,13 @@ IdentityFile ~/.ssh/id_rsa.pub
 IdentitiesOnly yes
 ```
 
+以后需要连接服务器的话，只需要执行如下命令就可以了。
+
+```shell
+# example 对应上面设置的 Host 。
+ssh example
+```
+
 ## 失败原因
 
 如果按照上述设置还没有成功的话，首先查看详细登陆信息。
