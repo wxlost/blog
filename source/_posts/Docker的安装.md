@@ -1,6 +1,6 @@
 ---
 title: Docker 的安装
-categories: 笔记
+categories: 工具
 comments: true
 tags:
   - Linux
