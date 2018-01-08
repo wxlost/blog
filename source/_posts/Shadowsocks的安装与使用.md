@@ -97,6 +97,13 @@ nohup ss-local -c /etc/shadowsocks-libev/ipv4.json < /dev/null &>> /var/log/ss-l
 export ALL_PROXY=socks5://127.0.0.1:1080
 ```
 
+设置完代理后可以用 curl 验证代理是否成功。
+
+```shell
+curl ip.sb
+curl myip.ipip.net
+```
+
 ### gfwlist
 
 可以通过 privoxy 转换为 http 代理，然后设定代理规则。可以参考 [gfwlist2privoxy](https://github.com/zfl9/gfwlist2privoxy) 。
