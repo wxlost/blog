@@ -331,9 +331,9 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
-  per_page: false
-  cdn: //cdnjs.cat.net/ajax/libs/mathjax/2.7.2/config/TeX-AMS-MML_HTMLorMML.js
+  enable: true
+  per_page: true
+  cdn: //cdnjs.cat.net/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
 han: false
