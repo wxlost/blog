@@ -49,3 +49,52 @@ id -nG
 ```shell
 sudo pip install docker-compose
 ```
+
+## 修改配置
+
+为了使用 docker 提供的 SDK， 需要修改 docker 的端口。按照网上大多数教程上，我实际使用中发现找不到 `/etc/sysconfig/docker` 这个文件。
+
+```shell
+# sudo docker version
+Client:
+ Version:	17.12.0-ce
+ API version:	1.35
+ Go version:	go1.9.2
+ Git commit:	c97c6d6
+ Built:	Wed Dec 27 20:10:36 2017
+ OS/Arch:	linux/amd64
+
+Server:
+ Engine:
+  Version:	17.12.0-ce
+  API version:	1.35 (minimum version 1.12)
+  Go version:	go1.9.2
+  Git commit:	c97c6d6
+  Built:	Wed Dec 27 20:09:12 2017
+  OS/Arch:	linux/amd64
+  Experimental:	false
+# lsb_release -a
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04 LTS
+Release:	14.04
+Codename:	trusty
+```
+
+解决方法：
+
+```shell
+# vim /lib/systemd/system/docker.service
+[Service]
+EnvironmentFile=/etc/default/docker
+ExecStart=/usr/bin/docker daemon -H fd:// $DOCKER_OPTS
+# vim /etc/default/docker
+DOCKER_OPTS='--selinux-enabled -H 0.0.0.0:2375 -H unix:///var/run/docker.sock '
+DOCKER_CERT_PATH=/etc/docker
+```
+
+接下来重载以及重启 docker 。
+
+```shell
+systemctl daemon-reload
+service docker restart
+```
