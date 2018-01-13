@@ -58,6 +58,7 @@ category_map:
     工具: tools
     未分类: uncategorized
     笔记: notes
+    数学: math
 tag_map:
 
 # Date / Time format
