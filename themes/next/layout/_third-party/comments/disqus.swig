@@ -12,10 +12,26 @@
           this.page.identifier = '{{ page.path }}';
           this.page.title = '{{ page.title| addslashes }}';
         };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://{{theme.disqus.shortname}}.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
+        function loadDisqus(){
+          var d = document, s = d.createElement('script');
+          s.src = 'https://{{theme.disqus.shortname}}.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+        }
+        $(function () {
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          if (offsetTop <= 0) {
+            loadDisqus();
+          } else {
+            $(window).on('scroll.disqus_scroll', function () {
+              var scrollTop = document.documentElement.scrollTop;
+              if (scrollTop >= offsetTop) {
+                $(window).off('.disqus_scroll');
+                loadDisqus();
+              }
+            });
+          }
+        });
       </script>
     {% endif %}
 
