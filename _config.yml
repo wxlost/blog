@@ -59,7 +59,9 @@ category_map:
     未分类: uncategorized
     笔记: notes
     数学: math
+    算法: algorithm
 tag_map:
+    二叉树: binary-tree
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
