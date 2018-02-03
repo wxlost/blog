@@ -1,8 +1,8 @@
 ---
-title: SSH免密码登陆
+title: SSH 免密码登陆
 categories: 笔记
 comments: true
-tags: Linux
+tags: [Linux, SSH]
 abbrlink: 48748
 date: 2017-08-08 00:40:43
 ---

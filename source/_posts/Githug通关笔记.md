@@ -1,5 +1,5 @@
 ---
-title: Githug通关笔记
+title: Githug 通关笔记
 categories: 笔记
 comments: true
 tags: Git
