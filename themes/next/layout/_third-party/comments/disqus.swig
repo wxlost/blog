@@ -7,6 +7,7 @@
 
     {% if page.comments %}
       <script type="text/javascript">
+        disqusLoaded=false;
         var disqus_config = function () {
           this.page.url = '{{ page.permalink }}';
           this.page.identifier = '{{ page.path }}';
@@ -17,21 +18,27 @@
           s.src = 'https://{{theme.disqus.shortname}}.disqus.com/embed.js';
           s.setAttribute('data-timestamp', '' + +new Date());
           (d.head || d.body).appendChild(s);
+          disqusLoaded=true;
         }
-        $(function () {
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          if (offsetTop <= 0) {
-            loadDisqus();
-          } else {
-            $(window).on('scroll.disqus_scroll', function () {
-              var scrollTop = document.documentElement.scrollTop;
-              if (scrollTop >= offsetTop) {
-                $(window).off('.disqus_scroll');
-                loadDisqus();
-              }
-            });
+        //Get the offset of an object
+        function findTop(obj) {
+          var curtop = 0;
+          if (obj.offsetParent) {
+            do {
+              curtop += obj.offsetTop;
+            } while (obj = obj.offsetParent);
+          return curtop;
           }
-        });
+        }
+        if(window.location.hash.indexOf('#comments') > 0)
+          loadDisqus();
+        if(comments) {
+          var commentsOffset = findTop(comments);
+          window.onscroll = function() {
+            if(!disqusLoaded && window.pageYOffset > commentsOffset - 1500)
+              loadDisqus();
+          }
+        }
       </script>
     {% endif %}
 
