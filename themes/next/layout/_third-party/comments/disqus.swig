@@ -32,12 +32,10 @@
         }
         if(window.location.hash.indexOf('#comments') > 0)
           loadDisqus();
-        if(comments) {
+        window.onscroll = function() {
           var commentsOffset = findTop(comments);
-          window.onscroll = function() {
-            if(!disqusLoaded && window.pageYOffset > commentsOffset - 1500)
-              loadDisqus();
-          }
+          if(!disqusLoaded && window.pageYOffset > commentsOffset - 1500)
+            loadDisqus();
         }
       </script>
     {% endif %}
