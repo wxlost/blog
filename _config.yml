@@ -60,6 +60,7 @@ category_map:
     笔记: notes
     数学: math
     算法: algorithm
+    机器学习: machine-learning
 tag_map:
     二叉树: binary-tree
     端口转发: port-forwarding
