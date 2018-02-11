@@ -66,6 +66,7 @@ tag_map:
     端口转发: port-forwarding
     机器学习: machine-learning
     神经网络: neural-network
+    回归: regression
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
