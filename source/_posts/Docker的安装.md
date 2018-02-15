@@ -21,6 +21,14 @@ Docker 是一个非常有趣的项目，可以减轻环境配置和部署的步�
 sudo wget -qO- https://get.docker.com/ | sh
 ```
 
+### 国内加速
+
+阿里云提供Docker加速器。 进入 <https://cr.console.aliyun.com> ，注册好账号，找到 Docker Hub 镜像站点，在上面找到你专属加速器地址:
+
+```
+https://xxx.mirror.aliyuncs.com
+```
+
 ## 免 sudo 权限运行
 
 ### 添加到用户组
