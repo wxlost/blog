@@ -1,6 +1,7 @@
-# Personal Blog
+# Notes
 
-[https://www.ouyangsong.com](https://www.ouyangsong.com)
+>"If you cannot explain something in simple terms, you don't understand it." via:Richard Feynman
 
-Powered By Hexo & Netlify
+Thanks to Hexo & Netlify & Disqus & Algolia
 
+Made with :hearts: in China
