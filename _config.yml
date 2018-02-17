@@ -68,6 +68,7 @@ tag_map:
     神经网络: neural-network
     回归: regression
     排序: sort
+    分类: classifier
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
