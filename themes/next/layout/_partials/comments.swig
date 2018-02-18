@@ -27,6 +27,10 @@
         </noscript>
       </div>
     </div>
+  {% elseif theme.disqusapi.enable %}
+    <div class="comments" id="comments">
+      <div id="comment"></div>
+    </div>
   {% elseif theme.hypercomments_id %}
     <div class="comments" id="comments">
       <div id="hypercomments_widget"></div>

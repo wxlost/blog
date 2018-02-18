@@ -350,8 +350,19 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: ouyangsong
+  count: false
+
+# Disqusapi
+disqusapi:
+  enable: true
+  forum: 'ouyangsong'
+  site: 'https://www.ouyangsong.com'
+  api: 'https://disqus-proxy-docker-npksgqywja.now.sh/api'
+  mode: 3
+  badge: 'Root'
+  timeout: 3000
   count: false
 
 # Hypercomments
