@@ -359,7 +359,7 @@ disqusapi:
   enable: true
   forum: 'ouyangsong'
   site: 'https://www.ouyangsong.com'
-  api: 'https://disqus-proxy-docker-npksgqywja.now.sh/api'
+  api: 'https://ouyangsong.now.sh/api'
   mode: 3
   badge: 'Root'
   timeout: 3000
