@@ -70,6 +70,9 @@ tag_map:
     排序: sort
     分类: classifier
     二分搜索: binary-search
+    装饰器: decorator
+    函数式编程: functional-programming
+    元编程: meta-programming
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
