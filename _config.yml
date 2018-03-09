@@ -61,6 +61,7 @@ category_map:
     数学: math
     算法: algorithm
     机器学习: machine-learning
+    计算机网络: computer-network
 tag_map:
     二叉树: binary-tree
     端口转发: port-forwarding
@@ -74,6 +75,12 @@ tag_map:
     函数式编程: functional-programming
     元编程: meta-programming
     递归: recursion
+    协议: protocol
+    物理层: physical-layer
+    链路层: data-link-layer
+    网络层: network-layer
+    传输层: transport-layer
+    应用层: application-layer
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
