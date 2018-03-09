@@ -1,7 +1,23 @@
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songouyang/blog.git"
+  },
+  "keywords": [
+    "Hexo",
+    "ouyansong",
+    "Blog",
+    "NexT"
+  ],
+  "author": "ouyangsong <songouyang@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/songouyang/blog/issues"
+  },
+  "homepage": "https://www.ouyangsong.com",
   "hexo": {
     "version": "3.4.4"
   },
@@ -21,5 +37,9 @@
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0"
+  },
+  "scripts": {
+    "dev": "hexo clean && hexo g && hexo s",
+    "deploy": "hexo clean && hexo g && hexo algolia"
   }
 }
