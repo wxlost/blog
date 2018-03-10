@@ -20,7 +20,7 @@ date: 2018-03-08 11:16:38
 
 ## 部署
 
-有服务器的同学可以部署到自己的服务器，我这里部署到 [now.sh](now.sh) 。这个平台支持静态文件、`nodejs` 和 `Docker` 服务的部署。
+有服务器的同学可以部署到自己的服务器，我这里部署到 [now.sh](https://zeit.co/now) 。这个平台支持静态文件、`nodejs` 和 `Docker` 服务的部署。
 
 ```docker
 FROM ubuntu
@@ -38,7 +38,7 @@ ENTRYPOINT [ "./app/IntelliJIDEALicenseServer_linux_amd64", "-u", "ouyangsong" ]
 
 ## now
 
-[注册](now.sh) 账号，安装 now 命令行。
+[注册](https://zeit.co/login) 账号，安装 now 命令行。
 
 ```shell
 npm install -g now
