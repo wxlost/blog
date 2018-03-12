@@ -81,6 +81,8 @@ tag_map:
     网络层: network-layer
     传输层: transport-layer
     应用层: application-layer
+    IP: internet-protocol
+    ICMP: internet-control-message-protocol
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
