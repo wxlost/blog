@@ -1,0 +1,4 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+source/_posts/*/*.png filter=lfs diff=lfs merge=lfs -text
+source/_posts/*/*.jpg filter=lfs diff=lfs merge=lfs -text
+source/_posts/*/*.svg filter=lfs diff=lfs merge=lfs -text
