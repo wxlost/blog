@@ -356,7 +356,7 @@ disqus:
 
 # Disqusapi
 disqusapi:
-  enable: true
+  enable: false
   forum: 'ouyangsong'
   site: 'https://www.ouyangsong.com'
   api: 'https://ouyangsong.now.sh/api'
