@@ -1,0 +1,45 @@
+language: node_js
+node_js: stable
+
+notifications:
+  email:
+    recipients:
+      - 1039316981@qq.com
+    on_success: change # default: change
+    on_failure: always # default: always
+
+install:
+  - npm install
+
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+  - git lfs uninstall
+  - cd ./public
+  - git init
+  - git config user.name "ouyangsong"
+  - git config user.email "songouyang@live.com"
+  - git add .
+  - git commit -m "update blog by Travis-CI with build $TRAVIS_BUILD_NUMBER"
+  # GitHub Pages
+  - git push --force  "https://${GH_TOKEN}@${GH_REF}" master:master
+  # Coding Pages
+  - git push --force "https://ouyangsong:${CO_TOKEN}@${CO_REF}" master:master
+  - git tag v1.$TRAVIS_BUILD_NUMBER -a -m "Auto Taged By Travis-CI With Build $TRAVIS_BUILD_NUMBER"
+  # Github Pages
+  - git push "https://${GH_TOKEN}@${GH_REF}" master:master --tags
+  # Coding Pages
+  - git push "https://ouyangsong:${CO_TOKEN}@${CO_REF}" master:master --tags
+
+branches:
+  only:
+    - master
+
+env:
+ global:
+   # Github Pages
+   - GH_REF: github.com/songouyang/songouyang.github.io
+   # Coding Pages
+   - CO_REF: git.coding.net/ouyangsong/ouyangsong.coding.me.git
