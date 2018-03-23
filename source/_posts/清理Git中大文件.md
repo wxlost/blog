@@ -65,7 +65,7 @@ oid sha256:583236d0803441010279375b8f5da4812ae82aa96e0ba2d5b6d67f1162f670eb
 size 87859
 ```
 
-## 参考文件
+## 参考链接
 
 - [Configuring Git Large File Storage](https://help.github.com/articles/configuring-git-large-file-storage/)
 - [Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
