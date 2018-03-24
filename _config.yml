@@ -62,6 +62,7 @@ category_map:
     算法: algorithm
     机器学习: machine-learning
     计算机网络: computer-network
+    编程珠玑: programming-pearls-2nd
 tag_map:
     二叉树: binary-tree
     端口转发: port-forwarding
@@ -83,6 +84,7 @@ tag_map:
     应用层: application-layer
     IP: internet-protocol
     ICMP: internet-control-message-protocol
+    位图: bitmap
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
