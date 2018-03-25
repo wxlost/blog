@@ -85,6 +85,8 @@ tag_map:
     IP: internet-protocol
     ICMP: internet-control-message-protocol
     位图: bitmap
+    中文: chinese
+    排版: typesetting
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
