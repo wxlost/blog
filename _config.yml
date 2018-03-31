@@ -88,6 +88,9 @@ tag_map:
     中文: chinese
     排版: typesetting
     标示: signatures
+    测试: test
+    计时: time
+    调试: debug
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
