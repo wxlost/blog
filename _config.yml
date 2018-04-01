@@ -94,6 +94,9 @@ tag_map:
     估算: estimation
     Little 定律: little-s-law
     72 法则: The-Rule-of-72s
+    正则表达式: regex
+    图像: images
+    镜像: mirrors
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
