@@ -91,6 +91,9 @@ tag_map:
     测试: test
     计时: time
     调试: debug
+    估算: estimation
+    Little 定律: little-s-law
+    72 法则: The-Rule-of-72s
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
